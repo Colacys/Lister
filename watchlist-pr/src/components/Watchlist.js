@@ -8,8 +8,13 @@ export const Watchlist = () => {
         <div className="movie-page">
             <div className="container">
                 <div className="header">
-                    <h1 className="heading">My Watchlist</h1>
+                    <div className="view">
+                        <h1 className="heading">Watchlist</h1>
+                        <span className="count-pill"> {watchlist.length}</span>
+                    </div>
+                        {/* <span className="count-pill">{watchlist.length > 5 ? "View More" : ""} </span> */}
                 </div>
+
                 {watchlist.length > 0 ? (
                     <div className="movie-grid">
                     {watchlist.map((movie) => (

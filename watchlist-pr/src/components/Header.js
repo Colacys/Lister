@@ -8,15 +8,15 @@ export const Header = () => {
             <div className="container">
                 <div className="inner-content">
                     <div className="brand">
-                        <Link to="/">WatchList</Link>
+                        <Link to="/">WatchLister</Link>
                     </div>
 
                     <ul className="nav-links">
                         <li>
-                            <Link to="/mylists">My Lists</Link>
+                            <Link to="/mylists">New Lists</Link>
                         </li>
                         <li>
-                            <Link to="/">Watch List</Link>
+                            <Link to="/watchlist">Watch List</Link>
                         </li>
                         <li>
                             <Link to="/watched">Watched</Link>

@@ -2,7 +2,7 @@
 
 :root {
   --primary: #032541;
-  --secondary: #21d07a;
+  --secondary: turquoise;
   --white: #fff;
 }
 
@@ -98,6 +98,7 @@ header a:hover {
 header .brand a {
   font-weight: 700;
   font-size: 1.5rem;
+  color: turquoise;
 }
 
 header .nav-links {
@@ -182,6 +183,7 @@ header .nav-links li:last-child {
 
 .result-card .controls button {
   margin-right: 10px;
+  background-color: turquoise;
 }
 
 .btn-controls-add{
@@ -197,10 +199,21 @@ header .nav-links li:last-child {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 30px;
+  margin-bottom: 30px;;
 }
 
 .count-pill {
+  display: block;
+  background-color: var(--secondary);
+  padding: 10px 15px;
+  font-size: 1.125rem;
+  font-weight: 600;
+  border-radius: 999px;
+  color: var(--primary);
+  text-align: center;
+}
+
+.count-pill-text {
   display: block;
   background-color: var(--secondary);
   padding: 5px 15px;
@@ -213,6 +226,7 @@ header .nav-links li:last-child {
 .movie-page .heading {
   color: var(--primary);
   margin: 0;
+  padding-right: 10px;
 }
 
 .movie-grid {
@@ -234,11 +248,19 @@ header .nav-links li:last-child {
   position: relative;
   border: 0;
   display: block;
+  transition: 1s ease;
 }
 
 .movie-card img {
   width: 100%;
   display: block;
+}
+
+.movie-card:hover{
+-webkit-transform: scale(1.1);
+-ms-transform: scale(1.1);
+transform: scale(1.1);
+transition: 1s ease;
 }
 
 .movie-card .overlay {
@@ -251,7 +273,7 @@ header .nav-links li:last-child {
   transition: all 0.3s ease;
 }
 
-.movie-card:hover .overlay {
+.movie-card:hover  {
   border: 3px solid var(--secondary);
 }
 
@@ -333,8 +355,22 @@ header .nav-links li:last-child {
   background-color: orange;
   outline: none;
   border: none;
-  border-radius: 10px;
+  border-radius: 5px;
   font-weight: 800;
   color: #032541;
 }
 
+.btn-create:hover{
+  background-color: #d16002;
+}
+
+.view{
+  display: flex;
+  /* width: fit-content; */
+}
+
+ .more{
+  display: flex;
+  /* background-color: #d16002; */
+  /* width: 10px; */
+}

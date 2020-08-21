@@ -4,13 +4,11 @@ export const MyLists = () => {
     return (
         <div>
             <div className="sub-heading">
-                <h1>My Lists</h1>
+                <h1>All Lists</h1>
                 <button className="btn-create"> + Create New List</button>
             </div>
             <ul>
-                <li>Anime Collection</li>
-                <li>manhwa Collection</li>
-                <li>Upcoming Movies</li>
+              <li>List Page</li>
             </ul>
         </div>
     )

@@ -61,13 +61,12 @@ export const ResultCard = ({movie}) => {
                         </button>
                     </div>
 
-                    <div className="controls">
-                        <button className="btn"
-                        disabled={watchedDisabled}
-                        // onClick={() => addMovieToWatched(movie)}
-                        >
-                            New List
-                        </button>
+                    <div className="controls more">
+                        <div className="add-to">
+                            <button className="btn"><i class="fas fa-chevron-circle-down"></i>
+                            </button>
+                        </div>
+                       
                     </div>
 
                  </div>

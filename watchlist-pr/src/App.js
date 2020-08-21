@@ -7,7 +7,7 @@ import {Watchlist} from './components/Watchlist';
 import './css/App.css';
 import "./lib/font-awesome/css/all.min.css";
 import {MyLists} from "./components/MyLists";
-
+import {Home} from "./components/home"
 import {GlobalProvider} from "./context/GlobalState";
 
 
@@ -19,6 +19,9 @@ function App() {
 
       <Switch>
         <Route exact path="/">
+          <Home />
+        </Route>
+        <Route exact path="/watchlist">
           <Watchlist />
         </Route>
 
